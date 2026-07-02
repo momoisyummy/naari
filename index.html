@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,8 +75,9 @@
 
   /* Header */
   .inv-header {
-    background: var(--ink);
-    color: #fff;
+    background: #fff;
+    color: var(--ink);
+    border-bottom: 1px solid var(--border);
     padding: 2rem 2.8rem 1.8rem;
     display: flex;
     justify-content: space-between;
@@ -94,14 +96,14 @@
     width: 72px;
     height: 72px;
     object-fit: contain;
-    filter: drop-shadow(0 0 6px rgba(201,169,110,0.3));
+
   }
 
   .brand-company {
     font-size: .82rem;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: #c94f9e;
     margin-bottom: .25rem;
     font-weight: 600;
   }
@@ -111,7 +113,7 @@
     font-weight: 700;
     letter-spacing: -.01em;
     line-height: 1.1;
-    color: #fff;
+    color: var(--ink);
   }
 
   .inv-badge {
@@ -121,14 +123,14 @@
     font-size: .65rem;
     letter-spacing: .14em;
     text-transform: uppercase;
-    color: rgba(255,255,255,.45);
+    color: var(--ink-light);
     margin-bottom: .2rem;
   }
   .inv-badge .value {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--accent);
+    color: #c94f9e;
     line-height: 1;
   }
 
@@ -312,8 +314,9 @@
 
   /* Footer */
   .inv-footer {
-    background: var(--ink);
-    color: rgba(255,255,255,.55);
+    background: #fff;
+    color: var(--ink-light);
+    border-top: 1px solid var(--border);
     padding: 1rem 2.8rem;
     display: flex;
     justify-content: space-between;
@@ -322,7 +325,7 @@
     gap: .5rem;
     align-items: center;
   }
-  .inv-footer span { color: rgba(255,255,255,.55); }
+  .inv-footer span { color: var(--ink-light); }
 
   /* Print */
   @media print {
